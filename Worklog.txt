@@ -1,0 +1,39 @@
+Work Log Final Project
+CS202
+
+NOTE: This log contains estimates. I tend to work on CS projects a little bit at a time, and sometimes in between tasks. 
+
+V1: Started with basic skeleton of linked list. Because my lab4 was more efficient, we chose to use my skeleton.
+V2: Worked in Library Dec 3rd ~3hrs. Decided to make data structure for songs, decided functions we wanted to keep/delete 
+    - No need for some of the speed checks as we were starting from strong skeleton
+    - wanted a more playlist feel and to deviate from lab: Ability to remove, Ability to add something other than an int 
+V3: Worked some more Dec 3rd at southpress coffee (~3 hours?); Tried to understand how remove would work, Finished Menu driver 
+    - Notable Choices: P for new playist and P for play simply wouldn't do, so we based our keys on:
+        - P for "new Playlist"
+        - N for "reName playlist"
+        - A for "Add song"
+        - S for "Spiel," which is the german word for "play" (as a command)
+        - Q for "Quit"
+        - ? for Help 
+            -- also notable: We chose to make our menu case sensitive even though it would've been equally easy not to. Even though it's inconvenient to the user, case sensitivity
+               gave us another check and another edgecase to practice considering. 
+ V4: Worked (~3 hours) fixing remove and other fringe cases in our main, created a Makefile
+ V5: Wrote Writeup (README -- industry standard) and this worklog
+
+    Overall, planning arounda skeleton made this lab alot easier, but it was still tedious to construct from scratch. I am very proud of how we built upon what we learned throughout the
+semester in a --at least, hopefully-- creative and efficient way. I am not sure if using a previous lab as a skeleton is quote-on-quote "allowed," but I feel like that is the point of 
+writing code: Never write the same thing twice. Remove was hard for me because I still have a hard time visualizing pointers, but I am happy that I was able to do so successfully.
+I am also proud of my Makefile. In my opinion, although they may seem small, remove and makefile are my two proudest takeaways from this lab: I was able to understand enough 
+to successfully replicate and implement ideas that were not explicitly given to me by a TA. This project challenged both of my major weaknesses from this semester:
+    - Straight out of CS102, I commented nearly every single line. By mid CS202, I didn't comment anything. I am hoping this is the sweet spot. 
+    - We had to develop logic essentially from scratch and I am not creative 
+I really challenged myself to think through what I as a user would want a playlist to be able to do, and then pushed my skills to accomplish it. I also pushed myself to articulate
+(both in comments and in person) to get my ideas and logic across, and I think regardless of the grade I am very proud of this lab.
+Because my main personal goal was to practice communication and push myself to think more like a machine (I have always worked more like a bubble sort than a binary one), its 
+hard to show direct code that I finished vs that Josiah finished. There were also a few mutual ideas that were mutual: Ie, I have my coding rubber ducky next to my laptop, so I would 
+talk to her while I worked, but by the time I had an idea and had a message to Josiah typed he had had the same idea and pinged me at the same time. 
+    I also was super pleased with how we shared our files. We realized that we could cd into each other's workspaces, so although we definitely used our fair share of CHMODing (and
+maybe made our project a bit too public while it was in progress), I was very excited to practice my linux skills even in a basic sharing-a-workspace way.
+    In conclusion, I guess I'm not really sure if we deserve the discretionary points since I'm not sure how the complexity of our project compares to our peers. However, I am 
+proud of myself and the final project, so in my heart I have awarded myself 5 discretionary points. :)
+***Note -- I also finally learned how to Tar a file, so I've at least learned one thing from CS202! 
