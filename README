@@ -1,0 +1,21 @@
+This project was created by Mak Mckinney and Josiah Roark for the Data Structures and Algorithms I course at the University of Tennessee Knoxville under Dr. Scott Emrich. This project is the Final Capstone project. 
+
+Our goal was to mimic spotify functionalities by creating an algorithm to store user-entered "songs." To accomplish this, we chose to implement a from-scratch linked list 
+as our driving data structure, as well as having created our own data type for Songs. For compiling consistency, we wrote a Makefile.
+
+Our make ran .07s, user .02s, and system 72% cpu .128 total. From this information we estimate a successful O(n) for our linked list when there are less than 100 
+elements stored. This data structure does have shortcomings: If there were, for instance, 10K songs, this structure would be painstakingly slow compared to a hash table. However, 
+the hash table would have more edge cases -- we would have to account for collisions for both song and artist (ie, if an artist did a cover of a song, or if there were two completely
+separate songs under the same name), which we handled in our linked list by comparing the contents of our song structure. 
+
+We did consider using a BSTree, but after some research found that linkedlist style data structures appear to be the industry standard for music apps. We believe the reason for this 
+is that a tree would be extremely hard to balance: Users will want to add and remove songs often which can cause the tree to unbalance. Also, although in an actual application the songs
+would be .mp3 files, our songs were based on string data types; The songs would've had to been sorted alphabetically (which can be useful for some users), but we wanted songs 
+to be sorted by order added. This approach was based on user convenience: Most people add songs by their preference or in order in which they discover them, not alphabetical. Die to 
+our experience level and time constraint, we chose to make this list singularly linked; However, this means that a playlist can only "play" once. In an application setting, we could
+double link our list to allow the songs to play on repeat. In that scenario, we would add a pause option to break the play funciton. The pause was unneccesary as our program
+is driven in a way that only prints the songs in the playlist once.
+
+If this project were further developed, it would be efficient to be transformed into a BSTree and to add the functions "shuffle()" and "sort()". We think that a hashtable would 
+be entirely overkill, unless if we were creating the entirety of the spotify app; On a larger scale, we would drive our overall musical database with a hash table, 
+and our playlists as linkedlists. 
