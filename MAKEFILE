@@ -1,0 +1,20 @@
+CXX=		g++
+CXXFLAGS=	-g -Wall -std=gnu++11
+SHELL=		bash
+
+all:	   playlist
+
+playlist:	main.o playlist.o
+	$(CXX) $(CXXFLAGS) -o $@ $^
+
+main.o: main.cpp
+	$(CXX) $(CXXFLAGS) -c main.cpp
+
+
+playlist.o: playlist.cpp playlist.h
+	$(CXX) $(CXXFLAGS) -c playlist.cpp
+
+
+
+clean:
+	rm -f solution *.o
